@@ -1,0 +1,20 @@
+﻿@page  "/login"
+@model Logowanie_PBD.Pages.LoginModel
+@{
+}
+
+<form method="post">
+    <fieldset>
+        <input asp-for="Login" placeholder="login" />
+        <span asp-validation-for="Login" class="text-danger"></span>
+
+        <br />
+
+        <input asp-for="Haslo" type="password" placeholder="hasło" />
+        <span asp-validation-for="Haslo" class="text-danger"></span>
+
+        <br />
+
+        <input type="submit" value="Submit" id="submitButton" />
+    </fieldset>
+</form>
